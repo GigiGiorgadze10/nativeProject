@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     background-color: black;
     background-image: url(images/bg-img.png);
@@ -13,6 +17,7 @@ header{
     justify-content: center;
     gap: 20vw;
     font-family: inter;
+    padding-top: 20px;
 }
 .SignIn-SignUp-container{
     color: white;
@@ -50,6 +55,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 }
 .hero-text-container{
     text-align: center;
@@ -114,7 +120,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .second-text-container{
     text-align: center;
@@ -145,7 +151,6 @@ a{
     color: white;
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
 }
 .third-text-container{
     color: #898CA9;
@@ -170,19 +175,20 @@ a{
     background-color: transparent;
     border: 1px solid white;
 }
-.third-main-container{
+.third-main-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    float: left;
-    gap: 20vw;
-    margin-top: -20vh;
+    gap: 10vw;
+}
+.third-main-container img {
+    max-width: 100%;
+    height: auto;
 }
 .fourth-container{
     color: white;
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
     align-items: center;
     justify-content: center;
     
@@ -207,14 +213,15 @@ a{
 }
 .fourth-main-container{
     display: flex;
-    float: right;
-    margin-top: -50vh;
+    margin-top: -70vh;
     gap: 20vh;
+    justify-content: right;
 }
 .crypto-table{
     width: 100%;
     display: flex;
     justify-content: center;  
+    margin-top: -20%;
 } 
 table{
     width: 50%;
@@ -266,23 +273,23 @@ a:hover{
 .abre{
     color: #933FFE;
 }
-.fivth-container{
+.fifth-container{
     color: white;
     display: flex;
     flex-direction: column;
 }
-.fivth-text-container{
+.fifth-text-container{
     color: #898CA9;
     font-size: 16px;
     font-family: inter;
 }
-.fivth-h1{
+.fifth-h1{
     font-size: 80px;
     font-family: inter;
     font-weight: 800;
     margin-bottom: 0;
 }
-.fivth-button{
+.fifth-button{
     border-radius: 10px;
     width: 150px;
     margin-top: 25px;
@@ -293,9 +300,80 @@ a:hover{
     font-size: 16px;
     font-family: inter;
 }
-.fivth-main-container{
+.fifth-main-container {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    float: right;
+    margin: 0 auto; /* Center content */
+}
+.sixth-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sixth-text-container{
+    color: #898CA9;
+    font-size: 16px;
+    font-family: inter;
+}
+.sixth-main-container {
+    clear: both; 
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sixth-h1{
+    font-size: 80px;
+    font-family: inter;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.gradient-border-wrapper{
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+}
+.Email{
+    position: relative;
+    z-index: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    color: white;
+}
+.gradient-border-wrapper::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    border-radius: 8px; 
+    background: linear-gradient(to bottom, #18C8FF, #933FFE);
+    padding: 2px; 
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: exclude;
+    mask-composite: exclude;
+}
+span{
+    color: white;
+}
+.send-button{
+    margin-left: 10px; 
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding-right: 10px;
+
 }
