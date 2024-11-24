@@ -377,3 +377,8 @@ span{
     padding-right: 10px;
 
 }
+footer{
+    height: 200px;
+    width: auto;
+    background-color: #1A1B23;
+}
